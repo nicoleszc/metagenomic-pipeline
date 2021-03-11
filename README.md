@@ -19,7 +19,7 @@ The data used in this pipeline consists of four samples of FASTQ read data of th
 
 ### Pipeline
 
-![Alt text](./images/pipeline.pdf)
+![Alt text](./images/pipeline.png)
 
 ## Example output
 
