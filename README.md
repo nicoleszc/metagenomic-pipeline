@@ -8,7 +8,6 @@ This pipeline is based in Snakemake and analyzes a multi-sample metagenomic data
 Metagenomics poses unique and challenging problems in comparison to the standard study of single organism datasets, for which most sequencing platforms are designed. Hi-C proximity ligation sequencing allows for improved deconvolution of metagenomic sequencing data by providing information about the co-localization of sequences within a single cell. This pipeline combines both short-read sequencing reads and Hi-C sequencing reads to accurately profile species present in multiple samples.
 
 
-
 ## Repository contents
 
 Both a pipeline usable for other metagenomic datasets as well as an example pipeline that has successfully run are included in this repo. The UI for the generalized pipeline allows for input of the number of samples, the conditions of each sample, and the types of read data. The user will be able to recreate a similar metagenomic analysis by downloading the Snakemake pipeline and the required environments.
@@ -20,7 +19,9 @@ The data used in this pipeline consists of four samples of FASTQ read data of th
 
 ## Example output
 
+A DAG is automatically produced through Snakemake. The DAG for the *N. oceanica* metagenomic pipeline is shown below.
 
+![Alt text](./example_dag.png)
 
 
 ## Acknowledgements
