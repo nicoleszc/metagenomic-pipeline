@@ -21,7 +21,7 @@ The data used in this pipeline consists of four samples of FASTQ read data of th
 
 A DAG is automatically produced through Snakemake. The DAG for the *N. oceanica* metagenomic pipeline is shown below.
 
-![Alt text](./example_dag.png)
+![Alt text](./images/example_dag.png)
 
 
 ## Acknowledgements
