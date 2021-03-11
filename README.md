@@ -17,6 +17,10 @@ Both a pipeline usable for other metagenomic datasets as well as an example pipe
 
 The data used in this pipeline consists of four samples of FASTQ read data of the algal species *Nannochloropsis oceanica*. *N. oceanica* is of significant interest as an alternative energy source due to its high lipid content and minimal growth requirements. However, *N. oceanica* is easily susceptible to infection by microscopic pathogen(s) that are not yet identified. By using metagenomic techniques and leveraging the increased deconvolutional power of Hi-C, we can identify the organisms present in algal ponds. We are studying four samples, two of which represent healthy ponds, and two that represent sick ponds that are no longer viable for energy production. In this project we aim to identify the species present in each of the ponds, and upon comparison of the healthy and sick ponds, identify the possible pathogen(s).
 
+### Pipeline
+
+![Alt text](./images/pipeline.pdf)
+
 ## Example output
 
 A DAG is automatically produced through Snakemake. The DAG for the *N. oceanica* metagenomic pipeline is shown below.
