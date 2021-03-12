@@ -19,17 +19,20 @@ The data used in this pipeline consists of four samples of FASTQ read data of th
 
 ### Pipeline
 
-Our Snakemake pipeline processes FASTQ reads from both Illumina short-read sequencing and Hi-C sequencing to determine taxonomic and species abundances in each sample. The pipeline is divided into five main steps: Data, Read Processing, Assembly, Binning, Classification. The boxes under each step show the tools used. In addition, after classification, we developed an R Shiny script to visualize our results. A visual representation of our pipeline is shown below.
+Our Snakemake pipeline processes FASTQ reads from both Illumina short-read sequencing and Hi-C sequencing to determine taxonomic and species abundances in each sample. The pipeline is divided into five main steps: Data, Read Processing, Assembly, Binning, Classification. A visual representation of our pipeline is shown below. The boxes under each step show the relevant tools used.
 
 ![Alt text](./images/pipeline.png)
 
 
 ## Example output
 
-A DAG is automatically produced through Snakemake and offers another way to visualize the steps of our pipeline. The DAG for the *N. oceanica* metagenomic pipeline is shown below, featuring only one of our samples, "algae52" for simplicity, although our script can accomodate multiple sample. The dotted lines denote those tasks which have already been completed at the time of creating the DAG image. 
+A DAG is automatically produced through Snakemake and offers another way to visualize the steps of our pipeline. The DAG for the *N. oceanica* metagenomic pipeline is shown below, featuring only one of our samples, "algae52", for simplicity, although our script can accomodate multiple sample. The dotted lines denote those tasks which have already been completed at the time of creating the DAG image. 
 
 ![Alt text](./images/example_dag.png)
 
+After classification, we developed an R Shiny script to visualize our results. The percent community composition for each pond is shown below. Notably, we see that sick ponds display a substantial abundance (~33%) of the phylum Bdellovibrionota, which is not observed in healthy ponds. This finding suggests that Bdellovibrionota is detrimental to algal pond health.
+
+![Alt text](./images/rshiny_output.png)
 
 ## Acknowledgements
 
