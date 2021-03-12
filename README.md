@@ -19,11 +19,13 @@ The data used in this pipeline consists of four samples of FASTQ read data of th
 
 ### Pipeline
 
+Our Snakemake pipeline processes FASTQ reads from both Illumina short-read sequencing and Hi-C sequencing to determine taxonomic and species abundances in each sample. The pipeline is divided into five main steps: Data, Read Processing, Assembly, Binning, Classification. The boxes under each step show the tools used. In addition, after classification, we developed an R Shiny script to visualize our results. A visual representation of our pipeline is shown below.
+
 ![Alt text](./images/pipeline.png)
 
 ## Example output
 
-A DAG is automatically produced through Snakemake. The DAG for the *N. oceanica* metagenomic pipeline is shown below.
+A DAG is automatically produced through Snakemake. The DAG for the *N. oceanica* metagenomic pipeline is shown below, featuring only one of our samples, 
 
 ![Alt text](./images/example_dag.png)
 
