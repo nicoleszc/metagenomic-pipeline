@@ -23,9 +23,10 @@ Our Snakemake pipeline processes FASTQ reads from both Illumina short-read seque
 
 ![Alt text](./images/pipeline.png)
 
+
 ## Example output
 
-A DAG is automatically produced through Snakemake. The DAG for the *N. oceanica* metagenomic pipeline is shown below, featuring only one of our samples, 
+A DAG is automatically produced through Snakemake and offers another way to visualize the steps of our pipeline. The DAG for the *N. oceanica* metagenomic pipeline is shown below, featuring only one of our samples, "algae52" for simplicity, although our script can accomodate multiple sample. The dotted lines denote those tasks which have already been completed at the time of creating the DAG image. 
 
 ![Alt text](./images/example_dag.png)
 
